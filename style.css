@@ -5,6 +5,7 @@
     --extra: #28262c;
     --hover: #5F3F9E;
     --destaque: rgb(236, 202, 49);
+    --texto:  rgb(161, 144, 161);
 }
 
 
@@ -20,22 +21,103 @@ body {
     color: var(--destaque)
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 header {
+    margin:20px;
+    border-radius: 6px;
     background-color: var(--main);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.432);
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav a {
+    margin: 0px 4px;
+    padding: 20px 15px 22px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition-duration: 0.2s;
+}
+
+header nav a:hover {
+    background-color: var(--hover);
+    border-radius: 6px;
+}
+
+header input {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    font-style: italic;
+    background-color: var(--extra);
+    border-radius: 6px;
+    border: none;
+    color: var(--texto);
+}
+
+header input:hover {
+    outline: 2px solid var(--hover);
+}
+
+header .conteudo input {
+    margin: 0px 10px;
+}
+header .conteudo a {
+    margin: 0px 10px;
 }
 
 main {
-    margin: 20px 50px;
+    margin: 20px 100px;
     text-align: center;
     background-color: var(--main);
     border-radius: 6px;
 }
 
+
+
+.imagem-container {
+    position: relative;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-button {
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    padding: 20px 30px;
+    font-size: 18px;
+    border: 2px solid var(--destaque);
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    transform: scale(1.1);
+}
+
+
+
 aside {
     margin: 20px;
     padding: 15px;
-    background-image: linear-gradient(to bottom, var(--extra), rgba(0, 0, 0, 0.192));
+    background-image: linear-gradient(to top, var(--extra), rgba(0, 0, 0, 0.082));
     border-radius: 8px;
     box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.432);
 }
@@ -50,7 +132,6 @@ aside a {
 }
 
 aside a:hover {
-    text-decoration: underline;
     background-color: var(--hover);
 }
 
@@ -66,4 +147,17 @@ li {
 li img {
     border-radius: 4px;
     
+}
+
+footer {
+    background-color: var(--extra);
+    text-align: center;
+    color: var(--texto);
+    padding: 15px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--destaque)
 }

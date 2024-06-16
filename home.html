@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZero</title>
 
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="Logo do Site">
-        <h1>GameZero</h1>
+        <a href="#"><img src="assets/logo.png" alt="Logo do Site"></a>
+
 
         <nav>
             <a href="#">novidades</a>
             <a href="#">home</a>
             <a href="#">categorias</a>
+            <a href="#">biblioteca</a>
         </nav>
 
-        <input type="text" placeholder="Pesquisar...">
+        <div class="conteudo">
+            <input type="text" placeholder="Pesquisar...">
 
-        <a class="profile" href="#"><img src="assets/profile-icon.png" alt="Icone de Perfil"></a>
+            <a class="profile" href="#"><img src="assets/profile-icon.png" alt="Icone de Perfil"></a>
 
-        <a href="#"><img src="assets/settings_icon.png" alt="Icone de Configurações"></a>
-    </header>
+            <a href="#"><img src="assets/settings_icon.png" alt="Icone de Configurações"></a>
+                </header>
+        </div>
 
     <main>
-        <a href="#"><img src="assets/jogos/tlou.jpg" alt="Imagem do The Last Of Us Remastered"></a>
-
-        <button>Ver Lançamentos</button>
+        <div class="imagem-container">
+            <a href="#"><img src="assets/jogos/tlou.jpg" alt="Imagem do The Last Of Us Remastered" class="main-img"></a>
+            <a href="#" class="main-button">Mais Lançamentos</a>
+        </div>
 
         <aside>
             <nav>
@@ -51,5 +56,9 @@
             </li>
         </ul>
     </main>
+
+    <footer>
+        <p>Feito por: <a href="https://github.com/oGiOliveira" target="_blank">Gi Oliveira</a></p>
+    </footer>
 </body>
 </html>
